@@ -1,0 +1,11 @@
+@mixin centeredBlock
+  margin: 0 auto
+
+@mixin displayFlex($justify-content, $alignItems)
+  display: flex
+  justify-content: $justify-content
+  align-items: $alignItems
+
+@mixin curvedBorder($top-right, $bottom-left)
+  border-top-right-radius: $top-right
+  border-bottom-left-radius: $bottom-left
