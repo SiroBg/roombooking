@@ -18,6 +18,7 @@ function browsersync() {
 
 function scripts() {
   return src([
+    'node_modules/jquery/dist/jquery.min.js',
     'app/js/stackedCards.js',
     'app/js/index.js'
   ])

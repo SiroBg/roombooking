@@ -15,34 +15,31 @@
       <nav class="header__nav">
         <ul class="menu">
           <li class="menu__item">
-            <a href="#" class="menu__link">Раздел</a>
+            <a href="#about-section" class="menu__link">О приложении</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Раздел</a>
+            <a href="#features-section" class="menu__link">Преимущества</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Раздел</a>
+            <a href="#how-it-works-section" class="menu__link">Как это работает</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Раздел</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Раздел</a>
+            <a href="#tariff-section" class="menu__link">Тарифы</a>
           </li>
         </ul>
       </nav>
-      <a href="#" class="header__link logo logo_type_telegram">
+      <a href="https://vk.com/away.php?to=https%3A%2F%2Ft.me%2Froombooking&cc_key=" class="header__link logo logo_type_telegram">
         <img src="./images/dest/logo_type_telegram.png" alt="Телеграм канал" class="header__telegram-link logo logo_type_telegram">
       </a>
     </div>
   </header>
 
   <main class="main">
-    <section class="about section">
+    <section class="about section" id="about-section">
       <div class="about__wrapper wrapper">
         <div class="about__column">
           <h1 class="about__heading">Бронирование жилья в четыре клика</h1>
-          <p class="about__description">приложение, позволяющее минимизировать колличество действий для наших клиентов</p>
+          <p class="about__description">приложение, позволяющее минимизировать количество действий для наших клиентов</p>
           <div class="about__app-links app-links">
             <a href='https://play.google.com/store/apps/details?id=sibnik.com.kostyarooms&utm_source=site_official_top&utm_campaign=disign_1&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="app-links__link app-button">
               <img alt='Доступно в Google Play' src='./images/dest/google_play.png' class="app-button__image">
@@ -66,7 +63,9 @@
             </li>
           </ul>
         </div>
-        <img src="./images/dest/phone-screenshot.png" alt="Скриншот приложения" class="about__image">
+        <div class="about__image">
+          <img src="./images/dest/phone-screenshot.png" alt="Скриншот приложения" class="about__image-content">
+        </div>
         <p class="about__text about__text_type_special">
           текст текст текст текст текст текст текст текст текст текст текст
         </p>
@@ -76,35 +75,35 @@
       </div>
     </section>
 
-    <section class="features section">
+    <section class="features section" id="features-section">
       <div class="features__wrapper wrapper">
         <div class="features__info">
           <h2 class="features__heading">
-            Преимущества нашей системы бронированя
+            Преимущества нашей системы бронирования
           </h2>
           <p class="features__description">
             Наша цель - создать лучшее приложение для владельцев недвижимости и менеджеров отелей.
           </p>
         </div>
         <div class="features__item features__item_type_fast-booking">
-          Быстрый перенос брони на другой обьект
+          Быстрый перенос брони на другой объект
         </div>
         <div class="features__item features__item_type_double-protect">
           Защита от двойных бронирований
         </div>
         <div class="features__item features__item_documents">
-          Предусмотрено поле «Фото документов» в анкете при сдаче обьекта в аренду
+          Предусмотрено поле «Фото документов» в анкете при сдаче объекта в аренду
         </div>
         <div class="features__item features__item_type_coop">
-          Подключение сотрудников к вашему аккауту для совместной работы
+          Подключение сотрудников к вашему аккаунту для совместной работы
         </div>
         <div class="features__item features__item_type_calendar">
-          Учет бронирований обьектов в удобном календаре всегда под рукой
+          Учет бронирований объектов в удобном календаре всегда под рукой
         </div>
       </div>
     </section>
 
-    <section class="how-it-works section">
+    <section class="how-it-works section" id="how-it-works-section">
       <div class="how-it-works__wrapper wrapper">
         <div class="how-it-works__main-content">
           <h2 class="how-it-works__heading">как это работает</h2>
@@ -114,23 +113,24 @@
           <ul class="how-it-works__switcher-list switch-buttons">
             <li class="switch-buttons__button">
               <button type="button" class="button button_type_download">
-                скачай приложение
-              </button>
-            </li>
-            <li class="switch-buttons__button">
-              <button type="button" class="button button_type_add">
-                добавь сотрудников
+                добавь<br>
+                свои объекты
               </button>
             </li>
             <li class="switch-buttons__button">
               <button type="button" class="button button_type_object">
-                выбери<br>
-                обьект аренды
+                смотри свободные даты
               </button>
             </li>
             <li class="switch-buttons__button">
               <button type="button" class="button button_type_create">
-                создай бронирование
+                создай<br>
+                новую бронь
+              </button>
+            </li>
+            <li class="switch-buttons__button">
+              <button type="button" class="button button_type_add">
+                добавь сотрудника
               </button>
             </li>
           </ul>
@@ -141,13 +141,13 @@
               <li id="download">
                 <img src="./images/dest/screenshot-download.png" alt="Скриншот приложения">
               </li>
-              <li id="add">
+              <li  id="object">
                 <img src="./images/dest/screenshot-add.png" alt="Скриншот приложения">
               </li>
-              <li  id="object">
+              <li id="create">
                 <img src="./images/dest/screenshot-object.png" alt="Скриншот приложения">
               </li>
-              <li id="create">
+              <li id="add">
                 <img src="./images/dest/screenshot-create.png" alt="Скриншот приложения">
               </li>
             </ul>
@@ -156,11 +156,11 @@
       </div>
     </section>
 
-    <section class="tariff section">
+    <section class="tariff section" id="tariff-section">
       <div class="tariff__wrapper wrapper">
         <h2 class="tariff__heading">Тарифы</h2>
         <p class="tariff__description">
-          Мы молодая компания и стараемся сделать лучший прдукт для бронирования, чтобы завоевать вашу любовь и доверие
+          Мы молодая компания и стараемся сделать лучший продукт для бронирования, чтобы завоевать вашу любовь и доверие
         </p>
         <table class="tariff__table table">
           <tr class="table__row table__row_type_heading">
@@ -178,7 +178,7 @@
           </tr>
           <tr class="table__row">
             <td class="table__cell table__cell_type_first-column">
-              Кол-во обьектов
+              Кол-во объектов
             </td>
             <td class="table__cell">
               3
@@ -267,7 +267,7 @@
           <img alt="Загрузите в App Store" src="./images/dest/App_Store.png" class="app-button__image">
         </a>
       </div>
-      <a href="#" class="footer__link logo logo_type_telegram">
+      <a href="https://vk.com/away.php?to=https%3A%2F%2Ft.me%2Froombooking&cc_key=" class="footer__link logo logo_type_telegram">
         <img src="./images/dest/logo_type_telegram_footer.png" alt="Телеграм канал" class="header__telegram-link logo logo_type_telegram">
       </a>
       <p class="footer__date">

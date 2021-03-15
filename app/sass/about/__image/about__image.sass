@@ -1,2 +1,15 @@
 .about__image
+  position: relative
+  padding: 20px
   align-self: start
+  justify-self: center
+  &::before
+    content: ""
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 16px
+    left: 11px
+    background-image: url('../images/dest/border-for-screenshot.svg')
+    background-size: 258px
+    background-repeat: no-repeat
