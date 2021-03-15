@@ -2,7 +2,7 @@ const { src, dest, parallel, series, watch } = require('gulp');
 const browserSync = require('browser-sync').create();
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
-const sass = require('gulp-sass');
+const sass = require('gulp-dart-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cleancss = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
@@ -30,7 +30,7 @@ function scripts() {
 
 function styles() {
   return src('app/sass/index.sass')
-  .pipe(sass())
+  .pipe(sass().on('error', sass.logError))
   .pipe(concat('index.min.css'))
   .pipe(autoprefixer({ overrideBrowserlist: ['last 10 versions'], grid: true }))
   .pipe(cleancss(( { level: {1: { specialComments: 0 }} })))
