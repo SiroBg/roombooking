@@ -85,21 +85,23 @@
             Мы на стадии становления, и наш функционал постоянно пополняется новыми возможностями. И вы можете активно принимать в этом участие, коммуницируя с нами через отзыв или электронную почту
           </p>
         </div>
-        <div class="features__item features__item_type_fast-booking">
-          Быстрый перенос брони на другой объект
-        </div>
-        <div class="features__item features__item_type_double-protect">
-          Защита от двойных бронирований
-        </div>
-        <div class="features__item features__item_documents">
-          Предусмотрено поле «Фото документов» в анкете при сдаче объекта в аренду
-        </div>
-        <div class="features__item features__item_type_coop">
-          Подключение сотрудников к вашему аккаунту для совместной работы
-        </div>
-        <div class="features__item features__item_type_calendar">
-          Учет бронирований объектов в удобном календаре всегда под рукой
-        </div>
+        <ul class="features__list">
+          <li class="features__item features__item_type_fast-booking">
+            Быстрый перенос брони на другой объект
+          </li>
+          <li class="features__item features__item_type_double-protect">
+            Защита от двойных бронирований
+          </li>
+          <li class="features__item features__item_documents">
+            Предусмотрено поле «Фото документов» в анкете при сдаче объекта в аренду
+          </li>
+          <li class="features__item features__item_type_coop">
+            Подключение сотрудников к вашему аккаунту для совместной работы
+          </li>
+          <li class="features__item features__item_type_calendar">
+            Учет бронирований объектов в удобном календаре всегда под рукой
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -110,47 +112,63 @@
           <p class="how-it-works__description">
             Немного об основных функциях приложения
           </p>
-          <ul class="how-it-works__switcher-list switch-buttons">
-            <li class="switch-buttons__button">
+          <ul class="how-it-works__switcher-list switch-buttons" id="dp-dots">
+            <li class="switch-buttons__button" data-class="1">
               <button type="button" class="button button_type_download">
                 добавь<br>
                 свои объекты
               </button>
             </li>
-            <li class="switch-buttons__button">
+            <li class="switch-buttons__button" data-class="2">
               <button type="button" class="button button_type_object">
                 смотри свободные даты
               </button>
             </li>
-            <li class="switch-buttons__button">
+            <li class="switch-buttons__button" data-class="3">
               <button type="button" class="button button_type_create">
                 создай<br>
                 новую бронь
               </button>
             </li>
-            <li class="switch-buttons__button">
+            <li class="switch-buttons__button" data-class="4">
               <button type="button" class="button button_type_add">
                 добавь сотрудника
               </button>
             </li>
           </ul>
         </div>
-        <div class="how-it-works__gallery">
-          <div class="container-fixed stacked-cards stacked-cards-slide">
-            <ul>
-              <li id="download">
-                <img src="./images/dest/screenshot-download.png" alt="Скриншот приложения">
-              </li>
-              <li  id="object">
-                <img src="./images/dest/screenshot-add.png" alt="Скриншот приложения">
-              </li>
-              <li id="create">
-                <img src="./images/dest/screenshot-object.png" alt="Скриншот приложения">
-              </li>
-              <li id="add">
-                <img src="./images/dest/screenshot-create.png" alt="Скриншот приложения">
-              </li>
-            </ul>
+        <div id="slider">
+          <div class="dp-wrap">
+            <div id="dp-slider">
+              <div class="dp_item" data-class="1" data-position="1">
+                <div class="dp-content">
+                </div>
+                <div class="dp-img">
+                  <img class="img-fluid" src="./images/dest/screenshot-download.png" alt="investing">
+                </div>
+              </div>
+              <div class="dp_item" data-class="2" data-position="2">
+                <div class="dp-content">
+                </div>
+                <div class="dp-img">
+                  <img class="img-fluid" src="./images/dest/screenshot-add.png" alt="investing">
+                </div>
+              </div>
+              <div class="dp_item" data-class="3" data-position="3">
+                <div class="dp-content">
+                </div>
+                <div class="dp-img">
+                  <img class="img-fluid" src="./images/dest/screenshot-object.png" alt="investing">
+                </div>
+              </div>
+              <div class="dp_item" data-class="4" data-position="4">
+                <div class="dp-content">
+                </div>
+                <div class="dp-img">
+                  <img class="img-fluid" src="./images/dest/screenshot-create.png" alt="investing">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
