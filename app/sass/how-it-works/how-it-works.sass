@@ -1,8 +1,14 @@
 .how-it-works
   color: $subColor
-  min-height: 1057px
+  min-height: 972px
   &::before
     background-image: url('../images/dest/raindrops-second-type.svg')
     background-repeat: no-repeat
-    background-size: cover
+    background-size: 95%
     background-position: 60px 50%
+
+@media all and ( max-width: 1280px )
+  .how-it-works
+    &::before
+      background-size: cover
+      background-position: 50% 50%
