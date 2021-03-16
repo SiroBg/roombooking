@@ -130,6 +130,11 @@
   text-align: center;
 }
 
+.mobile-slider_how-it-works .slick-dots {
+  top: 425px;
+  left: 10px;
+}
+
 .slick-dotted.slick-slider
 {
     margin-bottom: 30px;
@@ -204,6 +209,17 @@
     color: #ADBD38;
 }
 
+.mobile-slider_how-it-works .slick-dots li button:before {
+  color: #fff;
+  opacity: 1;
+}
+
+.mobile-slider_how-it-works .slick-dots li.slick-active button:before {
+  font-size: 46px;
+  color: #fff;
+  opacity: 1;
+}
+
 .mobile-slider {
   position: relative;
   display: none;
@@ -212,6 +228,38 @@
 .mobile-slider_how-it-works {
   position: relative;
   display: none;
+}
+
+.mobile-slider_how-it-works__slide {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.mobile-slider_how-it-works .about__image {
+  padding: 11px;
+  margin-left: 23px;
+  margin-bottom: 35px;
+}
+
+.mobile-slider_how-it-works__img {
+  width: 200px;
+  margin-left: -6px;
+  border-radius: 20px;
+}
+
+.mobile-slider_how-it-works .button {
+  font-size: 15px;
+  margin-left: 6px;
+  padding-left: 10px;
+  text-align: right;
+  width: 80%;
+  min-height: 20px;
+  background-size: 18px;
+  background-position: 25px 50%;
+}
+
+.mobile-slider_how-it-works .button_type_object {
+  background-position: 10px 50%;
 }
 
 .mobile-slider .features__item {
@@ -227,7 +275,7 @@
   }
   .mobile-slider_how-it-works {
     display: block;
-    width: 250px;
+    width: 300px;
     margin: 0 auto;
   }
 }
