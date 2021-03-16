@@ -5,3 +5,16 @@
   align-items: end
   padding-top: 50px
   padding-bottom: 160px
+
+@media all and ( max-width: 1250px )
+  .footer__wrapper
+    margin-left: 20px
+    margin-right: 20px
+
+@media all and ( max-width: 680px )
+  .footer__wrapper
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-areas: 'link app' 'info info' 'date date'
+    align-items: center
+    row-gap: 20px
+    padding-bottom: 40px
