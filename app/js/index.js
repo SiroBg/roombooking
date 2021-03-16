@@ -18,3 +18,14 @@ navMenu.addEventListener('click', evt => {
     navMenu.classList.remove('menu_active')
   }
 })
+
+$(document).ready(function(){
+  $('.mobile-slider').slick({
+    dots: true,
+    speed: 500
+  });
+  $('.mobile-slider_how-it-works').slick({
+    dots: true,
+    speed: 500
+  });
+});

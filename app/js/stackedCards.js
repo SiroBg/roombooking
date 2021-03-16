@@ -6,25 +6,6 @@ jQuery(document).ready(function(){
         $("#dp-dots li").removeClass("active");
         $("#dp-dots li[data-class="+ get_active +"]").addClass("active");
       }
-      $("#dp-next").click(function(){
-        var total = $(".dp_item").length;
-        $("#dp-slider .dp_item:first-child").hide().appendTo("#dp-slider").fadeIn();
-        $.each($('.dp_item'), function (index, dp_item) {
-          $(dp_item).attr('data-position', index + 1);
-        });
-        detect_active();
-    
-      });
-    
-      $("#dp-prev").click(function(){
-        var total = $(".dp_item").length;
-        $("#dp-slider .dp_item:last-child").hide().prependTo("#dp-slider").fadeIn();
-        $.each($('.dp_item'), function (index, dp_item) {
-          $(dp_item).attr('data-position', index + 1);
-        });
-    
-        detect_active();
-      });
     
       $("#dp-dots li").click(function(){
         var get_slide = $(this).attr('data-class');
