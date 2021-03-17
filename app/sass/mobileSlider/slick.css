@@ -241,6 +241,11 @@
   margin-bottom: 35px;
 }
 
+.mobile-slider_how-it-works .about__image::before {
+  top: 0;
+  left: 0;
+}
+
 .mobile-slider_how-it-works__img {
   width: 200px;
   margin-left: -6px;
@@ -256,6 +261,7 @@
   min-height: 20px;
   background-size: 18px;
   background-position: 25px 50%;
+  cursor: auto;
 }
 
 .mobile-slider_how-it-works .button_type_object {

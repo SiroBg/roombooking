@@ -5,9 +5,7 @@ const uglify = require('gulp-uglify-es').default;
 const sass = require('gulp-dart-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cleancss = require('gulp-clean-css');
-const imagemin = require('gulp-imagemin');
-const newer = require('gulp-newer');
-const del = require('del');
+const htmlmin = require('gulp-htmlmin');
 
 function browsersync() {
   browserSync.init({
@@ -39,24 +37,12 @@ function styles() {
   .pipe(browserSync.stream())
 }
 
-function images() {
-  return src('app/images/src/**/*')
-  .pipe(newer('app/images/dest'))
-  .pipe(imagemin())
-  .pipe(dest('app/images/dest'))
-}
-
-function cleanimg() {
-  return del('app/images/dest/**/*', { force: true })
-}
-
 function buildcopy() {
   return src([
     'app/css/**/*.min.css',
     'app/js/**/*.min.js',
     'app/images/dest/**/*',
-    'app/vendor/**/*',
-    'app/**/*.html',
+    'app/vendor/**/*'
     ], { base: 'app' })
   .pipe(dest('dist'));
 }
@@ -65,14 +51,20 @@ function startwatch() {
   watch('app/sass/**/*', styles);
   watch(['app/**/*.js', '!app/**/*.min.js'], scripts);
   watch('app/**/*.html').on('change', browserSync.reload);
-  watch('app/images/src/**/*', images);
 }
+
+function minifyHtml() {
+  return src('app/**/*.html') // указываем пути к файлам .html
+  .pipe(htmlmin({
+    collapseWhitespace: true, // удаляем все переносы
+    removeComments: true // удаляем все комментарии
+  }))
+  .pipe(dest('dist')); // оптимизированные файлы .html переносим на продакшен
+};
 
 exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.styles = styles;
-exports.images = images;
-exports.cleanimg = cleanimg;
-exports.build = series(styles, scripts, images, buildcopy);
+exports.build = series(styles, scripts, buildcopy, minifyHtml);
 
-exports.default = parallel(styles, scripts, images, browsersync, startwatch);
+exports.default = parallel(styles, scripts, browsersync, startwatch);
