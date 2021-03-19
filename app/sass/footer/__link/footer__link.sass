@@ -1,7 +1,20 @@
 .footer__link
   width: min-content
+  padding-left: 40px
+  padding-top: 3px
+  padding-bottom: 3px
   grid-area: link
+  text-decoration: none
+  color: #000
+  background-image: url(../images/dest/tl-logo-footer1x.png)
+  background-repeat: no-repeat
+  background-size: 28px
+  background-position: 0 50%
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)
+  .footer__link
+    background-image: url(../images/dest/tl-logo-footer2x.png)
 
 @media all and ( max-width: 680px )
   .footer__link
-    justify-self: center
+    font-size: 15px
