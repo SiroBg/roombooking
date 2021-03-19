@@ -3,6 +3,6 @@
 ### Запуск проекта
 ```
   npm i
-  gulp
+  npm start
 
 ```
