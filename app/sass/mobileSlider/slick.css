@@ -285,3 +285,7 @@
     margin: 0 auto;
   }
 }
+
+.mobile-slider .features__item_type_fast-booking {
+  padding-left: 25px;
+}

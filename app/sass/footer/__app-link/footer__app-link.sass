@@ -1,3 +1,9 @@
 .footer__app-link
-  &:not(:last-of-type)
-    margin-right: 10px
+  &:last-of-type
+    margin-bottom: -4px
+
+@media all and ( max-width: 768px )
+  .footer__app-link
+    &:not(:last-of-type)
+      margin-right: 10px
+      margin-bottom: 0
