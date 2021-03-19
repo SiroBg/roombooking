@@ -5,14 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Room Booking</title>
-  <link rel="shortcut icon" type="image/png" href="./images/dest/favicon.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/dest/appapple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/dest/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/dest/favicon-16x16.png">
+  <link rel="manifest" href="./images/dest/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="./vendor/normalize.min.css">
   <link rel="stylesheet" href="./css/index.min.css">
 </head>
 <body class="root">
   <header class="header">
     <div class="header__wrapper wrapper">
-      <img src="./images/dest/room-booking-new-logo.png" alt="Логотип Room Booking" class="header__logo logo logo_type_room-booking" width="140" height="139">
+      <div class="header__title">
+        <img src="./images/dest/room-booking-new-logo.png" alt="Логотип Room Booking" class="header__logo" width="140" height="139">
+        <span class="header__title-text">Room Booking</span>
+      </div>
       <nav class="header__nav">
         <ul class="menu">
           <li class="menu__item">
@@ -49,20 +57,6 @@
               <img alt="Загрузите в App Store" src="./images/dest/apple_store2x-min.png" class="app-button__image" width="320" height="96">
             </a>
           </div>
-          <ul class="about__stats-list stats-list">
-            <li class="stats-list__item">
-              <span class="stats-list__text">22</span>
-              бронирований сегодня
-            </li>
-            <li class="stats-list__item">
-              <span class="stats-list__text">65</span>
-              бронирований сегодня
-            </li>
-            <li class="stats-list__item">
-              <span class="stats-list__text">1482</span>
-              бронирований сегодня
-            </li>
-          </ul>
         </div>
         <div class="about__image">
           <img src="./images/dest/phone-screenshot.png" alt="Скриншот приложения" class="about__image-content" width="520" height="1100">
@@ -306,10 +300,10 @@
         <a href="mailto:welcome@roombooking.biz" class="footer__contact-link">welcome@roombooking.biz</a>
       </p>
       <div class="footer__app-links">
-        <a href='https://play.google.com/store/apps/details?id=sibnik.com.kostyarooms&utm_source=site_official_top&utm_campaign=disign_1&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="app-button">
+        <a href='https://play.google.com/store/apps/details?id=sibnik.com.kostyarooms&utm_source=site_official_top&utm_campaign=disign_1&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="footer__app-link app-button">
           <img alt='Доступно в Google Play' src='./images/dest/google_play2x-min.png' class="app-button__image" width="320" height="96">
         </a>
-        <a href="#" class="app-button" onclick="alert('Приложение для ios в разработке')">
+        <a href="#" class="footer__app-link app-button" onclick="alert('Приложение для ios в разработке')">
           <img alt="Загрузите в App Store" src="./images/dest/apple_store2x-min.png" class="app-button__image" width="320" height="96">
         </a>
       </div>
