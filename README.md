@@ -1,8 +1,16 @@
-# [roombooking](https://sirobg.github.io/roombooking)
+# Проект [roombooking](https://sirobg.github.io/roombooking)
 
-### Запуск проекта
+### Описание проекта:
+Roombooking - одностраничный сайт-лендинг, выполненный для одноименного приложения. В проекте настроены два плагина на jQuery (слайдеры-карусели).
+
+### Особенности проекта:
+* SASS
+* jQuery
+* Gulp
+* БЭМ и БЭМ-nested
+
+### Команды для работы с проектом
 ```
-  npm i
-  npm start
-
+  npm i //устанавливаем зависимости
+  npm start //запускаем проект в браузере
 ```
